@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW30 Hamburger</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Choose Your Hamburger</h1>
+      <section class="hamburger-list">
+        <div class="card" style="width: 50%">
+          <img
+            src="./img/small.jpg"
+            class="card-img-top"
+            alt="small hamburger"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Small Hamburger</h5>
+            <p class="card-text">20cal 50MNT</p>
+            <a
+              href="#"
+              class="btn btn-primary"
+              data-hamburger-type="smallHamburger"
+              >Add to order</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 50%">
+          <img src="./img/big.jpg" class="card-img-top" alt="big hamburger" />
+          <div class="card-body">
+            <h5 class="card-title">Big Hamburger</h5>
+            <p class="card-text">40cal 100MNT</p>
+            <a
+              href="#"
+              class="btn btn-primary"
+              data-hamburger-type="bigHamburger"
+              >Add to order</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="extras" >
+        <h5 class="section-title">Extras</h5>
+
+        <div class="item-list">
+          <div class="item" data-extras-type="CHEES">
+            <div class="item-text">Chees 20cal 10MNT</div>
+            <div class="item-btn">
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic mixed styles example"
+              >
+                <button type="button" class="btn btn-primary" data-btn="add">
+                  Add
+                </button>
+                <button type="button" class="btn btn-danger" data-btn="del">
+                  Del
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" data-extras-type="SALAD">
+            <div class="item-text">Salad 5cal 20MNT</div>
+            <div class="item-btn">
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic mixed styles example"
+              >
+                <button type="button" class="btn btn-primary" data-btn="add">
+                  Add
+                </button>
+                <button type="button" class="btn btn-danger" data-btn="del">
+                  Del
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" data-extras-type="POTATO">
+            <div class="item-text">Potato 10cal 15MNT</div>
+            <div class="item-btn">
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic mixed styles example"
+              >
+                <button type="button" class="btn btn-primary" data-btn="add">
+                  Add
+                </button>
+                <button type="button" class="btn btn-danger" data-btn="del">
+                  Del
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" data-extras-type="SPICES">
+            <div class="item-text">Spices 0cal 15MNT</div>
+            <div class="item-btn">
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic mixed styles example"
+              >
+                <button type="button" class="btn btn-primary" data-btn="add">
+                  Add
+                </button>
+                <button type="button" class="btn btn-danger" data-btn="del">
+                  Del
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" data-extras-type="MAYO">
+            <div class="item-text">MAYO 10cal 15MNT</div>
+            <div class="item-btn">
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic mixed styles example"
+              >
+                <button type="button" class="btn btn-primary" data-btn="add">
+                  Add
+                </button>
+                <button type="button" class="btn btn-danger" data-btn="del">
+                  Del
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="order">
+        <h5 class="section-title">Your order:</h5>
+
+        <div class="order-list">
+        </div>
+        <div class="order-total">
+          <h5 class="order-price-text">Total price: <span class="order-price"></span></h5>
+          <h5 class="order-calories-text">Calories: <span class="order-calories"></span></h5>
+        </div>
+      </section>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/Hamburger.js"></script>
+    <script src="./js/SmallHamburger.js"></script>
+    <script src="./js/BigHamburger.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

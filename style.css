@@ -1,0 +1,45 @@
+.hamburger-list {
+    display: flex;
+}
+
+.btn-group {
+    float: right;
+
+}
+
+.extras,
+.order {
+    padding: 16px;
+    padding-top: 30px;
+}
+
+.section-title {
+    padding-bottom: 16px;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-item {
+    /* text-align: right; */
+    font-weight: 600;
+}
+
+.order-price-text,
+.order-calories-text {
+    max-width: 200px;
+    margin-left: auto;
+}
+
+.order-total{
+    padding-top: 25px;
+}
